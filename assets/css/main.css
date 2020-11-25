@@ -1,0 +1,102 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 2rem;
+}
+
+.red-text {
+  font-weight: 500;
+  line-height: 90px;
+  color: #ff3a46;
+}
+
+.text-regular {
+  line-height: 26px;
+  color: #716c80;
+}
+
+.btn-primary {
+  line-height: 90px;
+  color: #1a1c4d;
+  text-transform: capitalize;
+  padding: 0 0 1rem 0;
+  border-bottom: 1px solid #1a1c4d;
+}
+
+h1 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90px;
+  letter-spacing: 1.8px;
+  text-transform: capitalize;
+  color: #1a1c4d;
+}
+
+header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  margin: 33px 38px;
+  justify-content: space-around;
+}
+
+.menu {
+  display: flex;
+}
+.menu a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #858585;
+  margin: 5px 10px;
+  text-decoration: none;
+}
+
+.banner {
+  margin: 150px 0 0 0;
+  position: relative;
+}
+
+.banner-bg-shape-left {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner > .container {
+  display: flex;
+}
+
+.banner-img img {
+  width: 100%;
+}
+
+.banner-img,
+.banner-text {
+  flex-grow: 0.8;
+  flex-basis: 0;
+}
+.banner-img {
+  flex-grow: 1.2;
+}
+
+.banner-icons {
+  margin: 2rem 0;
+}
+
+.banner-icons i {
+  color: #a9bcf9;
+  margin: auto 0.5rem;
+}
+.banner-icons .fa-instagram {
+  color: #ff3a46;
+}

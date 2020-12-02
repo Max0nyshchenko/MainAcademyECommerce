@@ -1,14 +1,37 @@
 * {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+.position-relative {
+  position: relative;
 }
 
 .container {
-  margin: 0 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.m180 {
+  margin: 180px 0;
+}
+
+.my2 {
+  margin: 2rem 0;
+}
+
+.my1 {
+  margin: 1rem 0;
+}
+
+.p2 {
+  padding: 2rem;
 }
 
 .red-text {
   font-weight: 500;
-  line-height: 90px;
   color: #ff3a46;
 }
 
@@ -19,6 +42,7 @@
 
 .btn-primary {
   line-height: 90px;
+  cursor: pointer;
   color: #1a1c4d;
   text-transform: capitalize;
   padding: 0 0 1rem 0;
@@ -27,9 +51,10 @@
 
 h1 {
   font-size: 3rem;
+  padding: 0 0 2rem 0;
   font-style: normal;
   font-weight: 500;
-  line-height: 90px;
+  line-height: 70px;
   letter-spacing: 1.8px;
   text-transform: capitalize;
   color: #1a1c4d;
@@ -42,8 +67,9 @@ header {
   left: 0;
   right: 0;
   display: flex;
-  margin: 33px 38px;
+  padding: 33px 38px;
   justify-content: space-around;
+  background: #fff;
 }
 
 .menu {
@@ -99,4 +125,114 @@ header {
 }
 .banner-icons .fa-instagram {
   color: #ff3a46;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  padding: 2rem;
+  max-width: 25%;
+  text-align: center;
+}
+
+.best-seller-bg-shape {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.best-seller {
+  position: relative;
+}
+
+.best-seller > .container > p,
+.best-seller > .container > h3 {
+  text-align : center;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+ /* margin-top: 1rem;*/
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.product {
+  max-width: 23%;
+  padding: 2rem;
+}
+.product-img {
+  height: 170px;
+  margin-bottom: 1rem;
+}
+.product-img > img {
+  width: 100%;
+  transform: translate(-20%, -20%);
+}
+
+.product-content {
+  vertical-align: bottom;
+}
+
+.product1 {
+  background: #F5FDFF;
+}
+
+.product2 {
+  background: #FFFBFB;
+}
+
+.product3 {
+  background: #F5FFF5;
+}
+
+.product4 {
+  background: #FDFBFF;
+}
+
+.product-button {
+  float: right;
+}
+
+.app-bg-shape {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.underlined-heading {
+  text-decoration: underline;
+}
+
+.app-content-wrapper {
+  display: flex;
+}
+
+.app-content {
+  flex-basis: 0;
+  flex-grow: 1.2;
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.app-img {
+  flex-basis: 0;
+  flex-grow: 0.8;
+}
+
+.app-img img {
+  width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
